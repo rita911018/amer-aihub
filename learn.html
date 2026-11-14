@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 新手入门 · 亚玛芬 AI 知识库</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260907-core">
+<link rel="stylesheet" href="learning-experience.css?v=20260831-subnav-content">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>
+      亚玛芬 AI 知识库
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开主导航" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span><span class="sr-only">打开导航</span>
+    </button>
+    <nav class="nav-links" id="primaryNav">
+      <a href="index.html" >首页</a>
+      <div class="nav-dropdown">
+        <a href="learn.html" class="active">AI 新手入门</a>
+        <div class="nav-dropdown-menu">
+          <a href="learn.html#quick-start">5 分钟邮件上手</a>
+          <a href="progress.html">学习进度</a>
+          <a href="learn.html#route-concept">概念学习</a>
+          <a href="learn.html#learning-hub">上手学习</a>
+          <a href="learn.html#learningFaqTitle">小白三千问</a>
+        </div>
+      </div>
+      <a href="video.html">录播回放</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">AI 工具与资源</a>
+        <div class="nav-dropdown-menu">
+          <a href="resources.html#resource-start">三个推荐起点</a>
+          <a href="resources.html#xiaoa">小A内部问答</a>
+          <a href="resources.html#tools">推荐工具</a>
+          <a href="resources.html#courses">精选课程</a>
+          <a href="resources.html#creators">创作者与播客</a>
+          <a href="resources.html#reading">延伸阅读</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <div class="search-wrap" id="searchWrap">
+        <div class="search-box" id="searchBox">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input id="searchInput" type="text" aria-label="搜索课程、工具和文章" placeholder="搜索课程、工具、文章…" autocomplete="off">
+          <span class="kbd">Ctrl K</span>
+        </div>
+        <div class="search-drop" id="searchDrop"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="面包屑">
+  <a href="index.html">首页</a>
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+  <span class="cur">AI 新手入门</span>
+</nav>
+
+<main>
+  <section class="board-hero learn-hero">
+    <div class="container">
+      <div class="bh-left reveal">
+        <div class="bh-tag">01 · 新手学习</div>
+        <h1>AI 新手入门</h1>
+        <p>不用先记术语。先用一个虚构例子，让 AI 帮你写封邮件，再学怎么检查和改进。</p>
+        <div class="learn-hero-actions">
+          <a class="lesson-primary-action" data-learning-continue href="#quick-start">5 分钟，写好一封邮件</a>
+        </div>
+        <p class="learning-resume-note" data-learning-resume-note hidden></p>
+      </div>
+      <div class="hero-mascot reveal">
+        <picture>
+          <source srcset="img/xiaoa-learn-480.webp" type="image/webp">
+          <img src="img/xiaoa-learn.png" width="432" height="480" alt="正在阅读学习的小A AI 助手" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="section quick-start" id="quick-start" aria-labelledby="quickStartTitle">
+    <div class="container">
+      <div class="section-head"><div><div class="tag">第一件小事 · 约 5 分钟</div><h2 id="quickStartTitle">把零散信息，变成一封清楚的邮件</h2><p class="desc">用虚构材料练习：复制要求、生成邮件、检查结果，全程约 5 分钟。</p></div></div>
+      <div class="quick-start-grid">
+        <article class="learning-tool-card quick-template">
+          <span class="resource-tag">1 · 复制这段要求</span>
+          <h3>请 AI 帮忙写一封会议通知</h3>
+          <pre data-template-content>请根据下面的信息写一封简洁的中文会议通知，包含邮件主题和正文。
+收件人：项目小组同事。
+事项：本周五下午 3 点开线上会议，预计 30 分钟，讨论下周的任务安排。
+会前准备：每人列出本周进展和一个需要协助的问题。
+语气：礼貌、直接，不要套话。正文不超过 150 字。
+只使用我提供的信息。会议链接还没有确定，请标注“会议链接另行通知”，不要自己补日期、地点或链接。</pre>
+          <div class="quick-actions"><button type="button" data-copy-template>复制这段要求</button><span data-copy-feedback role="status" aria-live="polite"></span></div>
+          <p class="quick-caption">复制的是上面的虚构例子。换成真实工作时，先确认资料能否提供给所用工具。</p>
+        </article>
+        <article class="quick-example" aria-labelledby="quickExampleTitle">
+          <span class="resource-tag">参考结果 · 不用打开 AI 也能先看</span>
+          <h3 id="quickExampleTitle">这段要求，可以写出这样的邮件</h3>
+          <p class="quick-caption">这是预先写好的示例，不是现场生成的结果。你的 AI 可能换一种说法。</p>
+          <div class="quick-mail-preview">
+            <div class="quick-mail-subject"><span>主题</span><b>周五下午 3 点项目小组线上会议</b></div>
+            <div class="quick-mail-body"><p>各位同事：</p><p>本周五下午 3 点召开线上会议，预计 30 分钟，讨论下周任务安排。</p><p>请每人提前列出本周进展和一个需要协助的问题。</p><p>会议链接另行通知。谢谢！</p></div>
+          </div>
+        </article>
+      </div>
+      <div class="quick-instructions">
+        <article class="quick-open"><div><span class="resource-tag">2 · 现在自己试一次</span><h3>打开公司官方使用的 Copilot</h3><p>用公司账号登录，粘贴上面复制的要求并发送。</p><p>写邮件、整理材料用 Copilot；查制度、问流程用小A。</p></div><div class="quick-actions"><a href="https://m365.cloud.microsoft/chat" target="_blank" rel="noopener noreferrer">打开 Copilot ↗</a><a href="video.html">查看公司培训 →</a></div></article>
+        <article class="quick-check"><span class="resource-tag">3 · 有了结果，再检查和修改</span><h3>先核对，再发送；不合适就继续改</h3><p>AI 写好的是初稿，不要直接照发。对着你自己的结果，检查这三件事：</p><ul><li>周五、下午 3 点、30 分钟有没有写对？</li><li>有没有凭空多出日期、地点或会议链接？</li><li>同事能否一眼看懂要准备什么？</li></ul><div class="quick-revise"><b>觉得太啰嗦？再补一句要求：</b><p>“请再短一点，保留时间、议题和会前准备，不加新信息。”</p></div><div class="quick-next"><p>做完这一步，你就练过了：给背景、说要求、核对结果、继续修改。</p><a href="detail.html?type=learn&amp;id=ai-prompting">继续学：怎样把要求说清楚 →</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 原有两条学习路线完整保留，作为第一次练习后的选学内容。 -->
+  <section class="section route-picker" aria-labelledby="routePickerTitle">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="tag">选择学习方式</div>
+          <h2 id="routePickerTitle">做过一次了，接下来按需学</h2>
+          <p class="desc">点选一种学法，在下面查看对应的四个章节。</p>
+          <div class="learning-route-tabs" data-route-tabs role="tablist" aria-label="选择学习路线" hidden>
+            <button type="button" id="route-tab-practice" role="tab" aria-controls="learning-hub" aria-selected="true" aria-expanded="true" data-route-tab="practice">上手学习 <span>4 章</span></button>
+            <button type="button" id="route-tab-concept" role="tab" aria-controls="concept-panel" aria-selected="false" aria-expanded="false" tabindex="-1" data-route-tab="concept">概念学习 <span>4 篇</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning-route-panel" id="concept-panel" role="tabpanel" aria-labelledby="route-tab-concept">
+      <div class="section-head rh-concept-head">
+        <div>
+          <div class="tag">CONCEPT · 概念打底</div>
+          <h2>概念学习</h2>
+          <p class="desc">选读区：想弄懂原理时再看，不需要先背名词。</p>
+        </div>
+      </div>
+
+      <div class="concept-grid" id="route-concept">
+        <a class="concept-card reveal" data-chapter-id="ai-what" href="detail.html?type=learn&amp;id=ai-what">
+          <span class="ec-num">01 · 基础认识</span>
+          <span class="concept-card-status">未开始</span>
+          <h3>AI 到底是什么</h3>
+          <p>它能做什么，和搜索有什么不同，为什么答得顺也可能答错？用例子慢慢讲清。</p>
+          <span class="concept-card-foot">
+            <span class="concept-card-progress" data-default-text="选读 · 约 12 分钟">选读 · 约 12 分钟</span>
+            <span class="concept-card-action">开始读 →</span>
+          </span>
+        </a>
+        <a class="concept-card reveal" data-chapter-id="ai-other" href="detail.html?type=learn&amp;id=ai-other">
+          <span class="ec-num">02 · 术语速查</span>
+          <span class="concept-card-status">未开始</span>
+          <h3>AI 术语速查</h3>
+          <p>12 个最常遇到的 AI 关键词，遇到不会的来翻一下，三秒找到一句话解释。</p>
+          <span class="concept-card-foot">
+            <span class="concept-card-progress" data-default-text="速查 · 约 4 分钟">速查 · 约 4 分钟</span>
+            <span class="concept-card-action">去翻翻 →</span>
+          </span>
+        </a>
+        <a class="concept-card reveal" data-chapter-id="ai-history" href="detail.html?type=learn&amp;id=ai-history">
+          <span class="ec-num">03 · 发展历程</span>
+          <span class="concept-card-status">未开始</span>
+          <h3>AI 76 年发展史</h3>
+          <p>从图灵测试到 ChatGPT，三起两落——看完你才知道今天为什么突然能对话。</p>
+          <span class="concept-card-foot">
+            <span class="concept-card-progress" data-default-text="精读 · 约 6 分钟">精读 · 约 6 分钟</span>
+            <span class="concept-card-action">开始读 →</span>
+          </span>
+        </a>
+        <a class="concept-card reveal" data-chapter-id="prompt-basics" href="detail.html?type=learn&amp;id=prompt-basics">
+          <span class="ec-num">04 · 提问方法</span>
+          <span class="concept-card-status">未开始</span>
+          <h3>提示词五大方法</h3>
+          <p>把要求说清、补上背景、给个例子。学习五种常用方法，让回答更贴近你的需要。</p>
+          <span class="concept-card-foot">
+            <span class="concept-card-progress" data-default-text="选读 · 约 12 分钟">选读 · 约 12 分钟</span>
+            <span class="concept-card-action">开始读 →</span>
+          </span>
+        </a>
+      </div>
+      </div>
+
+      <div class="learning-route-panel" id="learning-hub" role="tabpanel" aria-labelledby="route-tab-practice">
+      <div class="section-head learning-intro">
+        <div>
+          <div class="tag">BEGINNER PATH · 上手学习</div>
+          <h2>上手学习：挑一个章节开始</h2>
+          <p class="desc">不必一次看完。挑一个当下最有用的章节，边读边动手试，最后带走一张能直接用的要点卡。</p>
+        </div>
+      </div>
+
+      <div class="learning-hub" aria-label="AI 新手入门四章路径">
+        <section class="learning-stage">
+          <div class="learning-stage-head">
+            <span class="learning-stage-num" aria-hidden="true">1</span>
+            <div><h3 class="learning-stage-title">先搞懂它</h3><p class="learning-stage-desc">知道它怎么干活，才知道它会在哪儿出错</p></div>
+          </div>
+          <div class="learning-stage-track">
+            <a class="learning-card" id="chapter-ai-basics" data-chapter-id="ai-basics" href="detail.html?type=learn&amp;id=ai-basics">
+              <span class="ec-num">01 · 认识 AI</span><span class="learning-status">未开始</span>
+              <h3>看清 AI：怎么工作、怎么帮你、怎么坑你</h3><p>从写邮件、整理材料这些小事开始。它能帮忙，也可能出错，重要结果要自己核对。</p>
+              <span class="learning-card-foot">
+                <span class="learning-card-progress" data-card-progress>5 节</span>
+                <span class="learning-card-action">开始学习</span>
+              </span>
+              <span class="learning-card-suggest" data-card-suggest hidden>建议从这里开始</span>
+            </a>
+            <a class="learning-card" id="chapter-ai-boundaries" data-chapter-id="ai-boundaries" href="detail.html?type=learn&amp;id=ai-boundaries">
+              <span class="ec-num">02 · 核实内容</span><span class="learning-status">未开始</span>
+              <h3>AI 会说错，重要内容要自己核实</h3><p>它说得再肯定，也不代表是真的。数字、日期、人名和出处，发出去前都要查一遍。</p>
+              <span class="learning-card-foot">
+                <span class="learning-card-progress" data-card-progress>5 节</span>
+                <span class="learning-card-action">开始学习</span>
+              </span>
+              <span class="learning-card-suggest" data-card-suggest hidden>建议从这里开始</span>
+            </a>
+          </div>
+        </section>
+        <section class="learning-stage">
+          <div class="learning-stage-head">
+            <span class="learning-stage-num" aria-hidden="true">2</span>
+            <div><h3 class="learning-stage-title">开始用它</h3><p class="learning-stage-desc">话怎么说、哪些活适合交给它</p></div>
+          </div>
+          <div class="learning-stage-track">
+            <a class="learning-card" id="chapter-ai-prompting" data-chapter-id="ai-prompting" href="detail.html?type=learn&amp;id=ai-prompting">
+              <span class="ec-num">03 · 说清要求</span><span class="learning-status">未开始</span>
+              <h3>话怎么说它才懂</h3><p>把它当需要交代背景的新同事。给背景别给形容词，想不清就让它先问你。</p>
+              <span class="learning-card-foot">
+                <span class="learning-card-progress" data-card-progress>5 节</span>
+                <span class="learning-card-action">开始学习</span>
+              </span>
+              <span class="learning-card-suggest" data-card-suggest hidden>建议从这里开始</span>
+            </a>
+            <a class="learning-card" id="chapter-ai-delegation" data-chapter-id="ai-delegation" href="detail.html?type=learn&amp;id=ai-delegation">
+              <span class="ec-num">04 · 判断分工</span><span class="learning-status">未开始</span>
+              <h3>哪些活能交给它</h3><p>两个问题定位一件事：有没有标准答案、错了代价多大。</p>
+              <span class="learning-card-foot">
+                <span class="learning-card-progress" data-card-progress>5 节</span>
+                <span class="learning-card-action">开始学习</span>
+              </span>
+              <span class="learning-card-suggest" data-card-suggest hidden>建议从这里开始</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section learning-faq" aria-labelledby="learningFaqTitle">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="tag">常见问题</div>
+          <h2 id="learningFaqTitle">你不好意思问的，这里都有</h2>
+          <p class="desc">四章讲的是方法，这里回答具体问题。按分组挑一个点开就行，不用从头看。</p>
+        </div>
+      </div>
+      <div data-faq-mount></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand"><span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>亚玛芬 AI 知识库</div>
+        <p class="f-desc">由 Amersports AI Community 维护的内部学习平台，帮助每一位员工从 AI 新手成长为高效使用者。</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">内容板块</h2>
+        <ul><li><a href="learn.html">AI 新手入门</a></li><li><a href="video.html">录播回放</a></li><li><a href="resources.html">AI 工具与资源</a></li></ul>
+      </div>
+      <div class="footer-community" role="region" aria-labelledby="footer-community-title">
+        <h2 class="footer-heading" id="footer-community-title">加入 AAC 社群</h2>
+        <p class="footer-community-copy">加入Amersports AI Community，请联系 Rita Sun <span class="f-contact">(<a class="footer-community-email" href="mailto:rita.sun@amersports.com">rita.sun@amersports.com</a>)</span></p>
+        <a class="footer-community-engage" href="https://engage.cloud.microsoft/main/org/amersports.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDYzMDY1NzAyNDAifQ" target="_blank" rel="noopener noreferrer">关注 Engage 社群</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Amer Sports · AI 赋能计划</span><span>内容持续更新</span></div>
+  </div>
+</footer>
+
+<script src="learning-entry.js?v=20260907"></script>
+<script src="learning-routes.js?v=20260904"></script>
+<script src="learning-experience.js?v=20260907"></script>
+<script>
+(function () {
+  function initLearningHub() {
+    if (!window.AIBeginner) return;
+    window.AIBeginner.initHub(document);
+    window.AIBeginner.initFaq(document);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initLearningHub);
+  else initLearningHub();
+}());
+</script>
+<script src="search.js?v=20260907"></script>
+<script src="site.js"></script>
+</body>
+</html>

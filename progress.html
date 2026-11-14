@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>学习进度 · 亚玛芬 AI 知识库</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260907-core">
+<link rel="stylesheet" href="learning-experience.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>亚玛芬 AI 知识库</a>
+    <button class="nav-toggle" type="button" aria-label="打开主导航" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span><span class="sr-only">打开导航</span></button>
+    <nav class="nav-links" id="primaryNav">
+      <a href="index.html" >首页</a>
+      <div class="nav-dropdown">
+        <a href="learn.html">AI 新手入门</a>
+        <div class="nav-dropdown-menu">
+          <a href="learn.html#quick-start">5 分钟邮件上手</a>
+          <a href="progress.html">学习进度</a>
+          <a href="learn.html#route-concept">概念学习</a>
+          <a href="learn.html#learning-hub">上手学习</a>
+          <a href="learn.html#learningFaqTitle">小白三千问</a>
+        </div>
+      </div>
+      <a href="video.html">录播回放</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">AI 工具与资源</a>
+        <div class="nav-dropdown-menu">
+          <a href="resources.html#resource-start">三个推荐起点</a>
+          <a href="resources.html#xiaoa">小A内部问答</a>
+          <a href="resources.html#tools">推荐工具</a>
+          <a href="resources.html#courses">精选课程</a>
+          <a href="resources.html#creators">创作者与播客</a>
+          <a href="resources.html#reading">延伸阅读</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right"><div class="search-wrap" id="searchWrap"><div class="search-box" id="searchBox"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="searchInput" type="text" aria-label="搜索课程、工具和文章" placeholder="搜索课程、工具、文章…" autocomplete="off"><span class="kbd">Ctrl K</span></div><div class="search-drop" id="searchDrop"></div></div></div>
+  </div>
+</header>
+
+<main>
+  <section class="progress-hero">
+    <div class="container">
+      <div class="tag">学习进度</div>
+      <h1>接着上次的地方继续</h1>
+      <p>记录保存在当前浏览器。关闭网站后仍会保留；更换设备、无痕模式或清除本站数据后不会自动同步。</p>
+    </div>
+  </section>
+
+  <section class="section progress-dashboard" aria-labelledby="progressOverviewTitle">
+    <div class="container">
+      <div class="progress-overview">
+        <div>
+          <span class="progress-overview-label">8 项学习内容</span>
+          <h2 id="progressOverviewTitle"><span data-progress-completed>0</span> 项已完成</h2>
+          <p data-progress-summary>还没有学习记录，可以从 5 分钟邮件练习开始。</p>
+        </div>
+        <strong data-progress-percent>0%</strong>
+        <div class="progress-overview-bar" role="progressbar" aria-label="全部学习内容的综合进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-progress-bar><i data-progress-fill></i></div>
+        <div class="progress-overview-actions">
+          <a class="lesson-primary-action" data-progress-continue href="learn.html#quick-start">从 5 分钟邮件练习开始</a>
+          <button type="button" data-progress-reset>重新学习</button>
+        </div>
+      </div>
+
+      <section class="progress-group" aria-labelledby="conceptProgressTitle">
+        <div class="progress-group-head"><div><span>按需了解原理</span><h2 id="conceptProgressTitle">概念学习</h2></div><b data-concept-completed>0 / 4 已完成</b></div>
+        <div class="progress-card-grid" data-progress-concept></div>
+      </section>
+
+      <section class="progress-group" aria-labelledby="practiceProgressTitle">
+        <div class="progress-group-head"><div><span>解决实际问题</span><h2 id="practiceProgressTitle">上手学习</h2></div><b data-practice-completed>0 / 4 已完成</b></div>
+        <div class="progress-card-grid" data-progress-practice></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="f-brand"><span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>亚玛芬 AI 知识库</div><p class="f-desc">由 Amersports AI Community 维护的内部学习平台，帮助每一位员工从 AI 新手成长为高效使用者。</p></div>
+      <div><h2 class="footer-heading">内容板块</h2><ul><li><a href="learn.html">AI 新手入门</a></li><li><a href="video.html">录播回放</a></li><li><a href="resources.html">AI 工具与资源</a></li></ul></div>
+      <div class="footer-community" role="region" aria-labelledby="footer-community-title">
+        <h2 class="footer-heading" id="footer-community-title">加入 AAC 社群</h2>
+        <p class="footer-community-copy">加入Amersports AI Community，请联系 Rita Sun <span class="f-contact">(<a class="footer-community-email" href="mailto:rita.sun@amersports.com">rita.sun@amersports.com</a>)</span></p>
+        <a class="footer-community-engage" href="https://engage.cloud.microsoft/main/org/amersports.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDYzMDY1NzAyNDAifQ" target="_blank" rel="noopener noreferrer">关注 Engage 社群</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Amer Sports · AI 赋能计划</span><span>内容持续更新</span></div>
+  </div>
+</footer>
+
+<script src="learning-entry.js?v=20260907"></script>
+<script src="learning-experience.js?v=20260907"></script>
+<script src="progress.js?v=20260907"></script>
+<script src="search.js?v=20260907"></script>
+<script src="site.js"></script>
+</body>
+</html>

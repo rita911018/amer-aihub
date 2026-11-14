@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>亚玛芬 AI 知识库 · 首页</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260907-core">
+</head>
+<body>
+
+<!-- ========== 顶部导航 ========== -->
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" class="active">
+      <span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>
+      亚玛芬 AI 知识库
+    </a>
+    <button class="nav-toggle" type="button" aria-label="打开主导航" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span><span class="sr-only">打开导航</span>
+    </button>
+    <nav class="nav-links" id="primaryNav">
+      <a href="index.html" >首页</a>
+      <div class="nav-dropdown">
+        <a href="learn.html">AI 新手入门</a>
+        <div class="nav-dropdown-menu">
+          <a href="learn.html#quick-start">5 分钟邮件上手</a>
+          <a href="progress.html">学习进度</a>
+          <a href="learn.html#route-concept">概念学习</a>
+          <a href="learn.html#learning-hub">上手学习</a>
+          <a href="learn.html#learningFaqTitle">小白三千问</a>
+        </div>
+      </div>
+      <a href="video.html">录播回放</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">AI 工具与资源</a>
+        <div class="nav-dropdown-menu">
+          <a href="resources.html#resource-start">三个推荐起点</a>
+          <a href="resources.html#xiaoa">小A内部问答</a>
+          <a href="resources.html#tools">推荐工具</a>
+          <a href="resources.html#courses">精选课程</a>
+          <a href="resources.html#creators">创作者与播客</a>
+          <a href="resources.html#reading">延伸阅读</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-right">
+      <div class="search-wrap" id="searchWrap">
+        <div class="search-box" id="searchBox">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input id="searchInput" type="text" aria-label="搜索课程、工具和文章" placeholder="搜索课程、工具、文章…" autocomplete="off">
+          <span class="kbd">Ctrl K</span>
+        </div>
+        <div class="search-drop" id="searchDrop"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ========== Hero：门户入口 ========== -->
+<section class="board-hero home-hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="bh-left reveal">
+      <h1>亚玛芬 AI 知识库</h1>
+      <p class="bh-subtitle">一站式 AI 学习资源与实践指南</p>
+    </div>
+    <div class="hero-mascot reveal">
+      <div class="hero-xiaoa-entry">
+        <a class="hero-xiaoa-cta" href="https://portal.amersports.cn/portal/indexs" target="_blank" rel="noopener">打开小A<svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <p>查制度、问流程、找内部信息，先问小A。</p>
+      </div>
+      <picture>
+        <source srcset="img/xiaoa-home-480.webp" type="image/webp">
+        <img src="img/xiaoa-home.png" width="400" height="480" alt="抬手欢迎的小A AI 助手" fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 三大板块入口 ========== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="tag">三个主要入口</div>
+        <h2>选择你的 AI 学习路径</h2>
+      </div>
+    </div>
+    <div class="entry-row">
+      <a class="entry-card" href="learn.html">
+        <span class="ec-top">
+          <span class="ec-num">01 · 新手学习</span>
+          <span class="ec-icon"><svg data-entry-icon="learn" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span></span>
+        <h3>AI 新手入门</h3>
+        <p>我是 AI 小白，想从零开始系统学习：是什么、怎么用、如何进阶。</p>
+        <span class="ec-link">进入板块<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="entry-card" href="video.html">
+        <span class="ec-top">
+          <span class="ec-num">02 · 培训回放</span>
+          <span class="ec-icon"><svg data-entry-icon="watch" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="13" rx="1"/><path d="m10 8 5 3-5 3zM8 20h8"/></svg></span></span>
+        <h3>录播回放</h3>
+        <p>回看公司内部 AI 培训、分享会与专题课程，随时补课不落进度。</p>
+        <span class="ec-link">进入板块<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="entry-card" href="resources.html">
+        <span class="ec-top">
+          <span class="ec-num">03 · 工具资源</span>
+          <span class="ec-icon"><svg data-entry-icon="resources" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7"/><rect x="13.5" y="3.5" width="7" height="7"/><rect x="3.5" y="13.5" width="7" height="7"/><rect x="13.5" y="13.5" width="7" height="7"/></svg></span></span>
+        <h3>AI 工具与资源</h3>
+        <p>找工具、课程、博主、论文 —— 一个资源导航，解决「从哪开始」。</p>
+        <span class="ec-link">进入板块<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section community-gallery" id="community-gallery" aria-labelledby="communityGalleryTitle">
+  <div class="container community-gallery-layout">
+    <div class="community-gallery-intro">
+      <div class="tag">一起学习</div>
+      <h2 id="communityGalleryTitle">AI 学习现场</h2>
+      <p class="community-gallery-lead">一起试一试，<br>让 AI 用进工作里。</p>
+      <p>从现场分享，到动手练习。看看同事们如何一起学习和交流 Copilot 的用法。</p>
+      <a class="community-gallery-link" href="video.html">查看培训回放 <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="training-carousel" data-training-carousel role="region" aria-roledescription="轮播图" aria-label="AI 培训现场照片">
+      <div class="training-carousel-photos" id="trainingCarouselPhotos" aria-live="off">
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 1 张，共 7 张">
+          <img src="img/community-training-01.jpg" width="1707" height="1280" loading="lazy" decoding="async" alt="Copilot 培训全景，讲者在投影屏幕前分享，同事们带着电脑参与">
+          <figcaption>现场分享 · 一起了解 Copilot</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 2 张，共 7 张" hidden>
+          <img src="img/community-training-02.jpg" width="1707" height="1280" loading="lazy" decoding="async" alt="同事们围坐在培训现场，使用笔记本电脑跟着练习">
+          <figcaption>动手练习 · 边听边试</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 3 张，共 7 张" hidden>
+          <img src="img/community-training-03.jpg" width="1707" height="1280" loading="lazy" decoding="async" alt="培训现场，一位同事手持话筒交流，旁边的屏幕展示 Copilot 培训内容">
+          <figcaption>面对面交流 · 分享想法与问题</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 4 张，共 7 张" hidden>
+          <img src="img/community-training-04.jpg" width="1706" height="1280" loading="lazy" decoding="async" alt="同事们在会议室参加 Copilot 分享，部分同事正在电脑上操作">
+          <figcaption>一起学习 · 从理解到实践</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 5 张，共 7 张" hidden>
+          <img src="img/community-training-05.jpg" width="1280" height="1707" loading="lazy" decoding="async" alt="AI 音乐主题分享现场，讲者在屏幕前介绍相关内容">
+          <figcaption>主题分享 · 了解 AI 音乐应用</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 6 张，共 7 张" hidden>
+          <img src="img/community-training-06.jpg" width="1710" height="1282" loading="lazy" decoding="async" alt="同事们带着电脑参加 AI 实操活动，跟随现场演示动手练习">
+          <figcaption>现场实操 · 跟着演示一起做</figcaption>
+        </figure>
+        <figure class="training-slide" role="group" aria-roledescription="幻灯片" aria-label="第 7 张，共 7 张" hidden>
+          <img src="img/community-training-07.jpg" width="1702" height="1276" loading="lazy" decoding="async" alt="AI 图像生成主题分享现场，讲者演示 Nano Banana Pro">
+          <figcaption>图像生成 · 交流创作方法</figcaption>
+        </figure>
+      </div>
+      <div class="training-carousel-controls" data-carousel-controls hidden>
+        <div class="training-carousel-pages" aria-label="选择照片">
+          <button type="button" data-carousel-page="0" aria-label="查看第 1 张：现场分享" aria-current="true">1</button>
+          <button type="button" data-carousel-page="1" aria-label="查看第 2 张：动手练习">2</button>
+          <button type="button" data-carousel-page="2" aria-label="查看第 3 张：面对面交流">3</button>
+          <button type="button" data-carousel-page="3" aria-label="查看第 4 张：一起学习">4</button>
+          <button type="button" data-carousel-page="4" aria-label="查看第 5 张：AI 音乐主题分享">5</button>
+          <button type="button" data-carousel-page="5" aria-label="查看第 6 张：现场实操">6</button>
+          <button type="button" data-carousel-page="6" aria-label="查看第 7 张：图像生成分享">7</button>
+        </div>
+        <div class="training-carousel-actions">
+          <button type="button" data-carousel-prev aria-label="上一张照片" aria-controls="trainingCarouselPhotos">←</button>
+          <button type="button" data-carousel-next aria-label="下一张照片" aria-controls="trainingCarouselPhotos">→</button>
+          <button type="button" data-carousel-play>暂停轮播</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ========== 页脚 ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="f-brand">
+          <span class="logo"><svg data-brand-icon="knowledge-book" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 5.5c3.1-.8 5.6-.2 7.5 1.5v12c-1.9-1.7-4.4-2.3-7.5-1.5z"/><path d="M19.5 5.5c-3.1-.8-5.6-.2-7.5 1.5v12c1.9-1.7 4.4-2.3 7.5-1.5z"/></svg></span>
+          亚玛芬 AI 知识库
+        </div>
+        <p class="f-desc">由 Amersports AI Community 维护的内部学习平台，帮助每一位员工从 AI 新手成长为高效使用者。</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">内容板块</h2>
+        <ul>
+          <li><a href="learn.html">AI 新手入门</a></li>
+          <li><a href="video.html">录播回放</a></li>
+          <li><a href="resources.html">AI 工具与资源</a></li>
+        </ul>
+      </div>
+      <div class="footer-community" role="region" aria-labelledby="footer-community-title">
+        <h2 class="footer-heading" id="footer-community-title">加入 AAC 社群</h2>
+        <p class="footer-community-copy">加入Amersports AI Community，请联系 Rita Sun <span class="f-contact">(<a class="footer-community-email" href="mailto:rita.sun@amersports.com">rita.sun@amersports.com</a>)</span></p>
+        <a class="footer-community-engage" href="https://engage.cloud.microsoft/main/org/amersports.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyNDYzMDY1NzAyNDAifQ" target="_blank" rel="noopener noreferrer">关注 Engage 社群</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Amer Sports · AI 赋能计划</span>
+      <span>内容持续更新</span>
+    </div>
+  </div>
+</footer>
+
+<script src="search.js?v=20260907"></script>
+<script src="site.js"></script>
+<script src="training-carousel.js?v=20260904"></script>
+</body>
+</html>
